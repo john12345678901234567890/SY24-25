@@ -5,11 +5,11 @@ Public Class Form1
         follow(ENEMY, Avatar, 100)
         follow(enemy2, Avatar, 10)
     End Sub
-    Sub follow(E As PictureBox, a As PictureBox, s As Integer)
+    Sub follow(E As PictureBox, a As PictureBox, speedx As Integer)
         If E.Location.Y > a.Location.Y Then
-            move(E, 0, -s)
+            move(E, 0, -speedx)
         Else
-            move(E, 0, s)
+            move(E, 0, speedx)
         End If
         If E.Location.X > a.Location.X Then
             move(E, -s, 0)
