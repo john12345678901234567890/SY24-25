@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image x:Name="TEAM1" HorizontalAlignment="Left" Height="223" Margin="51,0,0,0" VerticalAlignment="Center" Width="208" Source="/channels4_profile.jpg">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="butttt" Content="Ravens" HorizontalAlignment="Left" Margin="437,198,0,0" VerticalAlignment="Top" Height="52" Width="94" Click="Button_Click"/>
+        <Image x:Name="TEAM2" HorizontalAlignment="Left" Height="100" Margin="357,303,0,0" VerticalAlignment="Top" Width="100" Source="/channels4_profile (1).jpg"/>
+        <Label x:Name="TEAMLABEL" Content="Label" HorizontalAlignment="Left" Margin="242,62,0,0" VerticalAlignment="Top"/>
+        <Button Content="Steelers" HorizontalAlignment="Left" Margin="400,88,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Image x:Name="TEAM3" HorizontalAlignment="Left" Height="100" Margin="633,321,0,0" VerticalAlignment="Top" Width="100" Source="/images.png"/>
+        <Button Content="cheifs" HorizontalAlignment="Left" Margin="656,98,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+
     </Grid>
 </Window>
